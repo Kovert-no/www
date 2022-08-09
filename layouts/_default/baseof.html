@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ block "head" . }}
+    {{ partial "head" . }}
+    {{ end }}
+    <title>
+        {{ block "title" . }}
+        {{ .Site.Title }}
+        {{ end }}
+    </title>
+</head>
+<body>
+    {{ block "header" . }}
+    {{ partial "navbar" . }}
+    {{ end }}
+    {{ block "main" . }}
+        <h1>main</h1>
+    {{ end }}
+    {{ block "footer" . }}
+    {{ partial "footer" . }}
+    {{ end }}
+</body>
+</html>

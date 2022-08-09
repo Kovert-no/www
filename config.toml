@@ -1,0 +1,6 @@
+baseURL = 'https://Kovert-no.github.io/www'
+languageCode = 'en-us'
+title = 'Kovert'
+
+[sitemap]
+  filename = 'sitemap.xml'
