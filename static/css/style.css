@@ -328,3 +328,16 @@ span.highlight-inverse {
 .image-border {
     border: 1px solid #0ca438;
 }
+
+.tabs {
+    overflow-x:hidden;
+}
+
+@media screen and (max-width: 1023px){
+    .columns {
+        margin-left: -0.75rem;
+        /* margin-right: -0.75rem; */
+        margin-top: -0.75rem;
+    }
+}
+
