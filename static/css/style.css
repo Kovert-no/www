@@ -2,12 +2,31 @@ body {
     min-height: 100vh;
 }
 
+@media screen and (max-width: 1023px){
+    .navbar-menu {
+        background-color: #043712;
+        box-shadow: 0 8px 16pxrgba(10,10,10,.1);
+        padding: 0.5rem 0;
+}
+}
+
 @media screen and (min-width: 1408px){
     .container:not(.is-max-desktop):not(.is-max-widescreen){
         max-width: 1152px;
     }
-    }
+}
 
+@media screen and (max-width: 1023px){
+.navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
+    background-color: #043712;
+}
+}
+
+@media screen and (max-width: 1023px){
+.navbar-link:hover {
+    background-color: #043712;
+}
+}
 .hero {
     background-image: linear-gradient(#043712, #0b822c);
 }
