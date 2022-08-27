@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {   
     min-height: 100vh;
 }
@@ -94,7 +98,6 @@ body {
 }
 
 .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-
     color: #dadada;
 }
 
@@ -302,6 +305,7 @@ span.highlight-inverse {
     background-color: #043712 !important;
     background-image: none !important;
 }
+
 .button.is-success {
     background-color: #096121;
     border-color: transparent;
@@ -338,6 +342,44 @@ span.highlight-inverse {
         margin-left: -0.75rem;
         /* margin-right: -0.75rem; */
         margin-top: -0.75rem;
+    }
+}
+
+.hero-foot > .tabs.is-boxed {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+.trustedbycolumns {
+    max-width: 100vw;
+    margin: none !important;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .container {
+        margin: 0 40px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .pentest-feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pentest-feature.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        padding: 0 30px !important;
+    }
+    .is-zoomed {
+        width: 80vw;
+        transform: none;
+    }
+    .listwrapper ul {
+        width: auto;
     }
 }
 
