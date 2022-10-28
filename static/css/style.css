@@ -407,3 +407,8 @@ span.highlight-inverse {
 .question {
     font-weight: bold;
 }
+
+.not-notification{
+    border-radius: 0;
+    margin-bottom: 0!important;
+}
