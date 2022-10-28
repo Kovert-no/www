@@ -12,7 +12,7 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         if (response.ok) {
-            contactFormStatus.innerHTML = "Thanks for your submission!";
+            contactFormStatus.innerHTML = "Thanks for your submission, you will hear back from us shortly!";
             contactForm.reset()
         } else {
             response.json().then(data => {
