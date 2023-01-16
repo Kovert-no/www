@@ -1,6 +1,18 @@
 baseURL = 'https://kovert.no'
-languageCode = 'en-us'
 title = 'Kovert'
+defaultContentLanguage = 'en'
 
 [sitemap]
   filename = 'sitemap.xml'
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    languageCode = 'en-us'
+    title = 'Kovert'
+  [languages.no]
+    languageName = 'Norwegian'
+    weight = 2
+    languageCode = 'no-nb'
+    title = 'Kovert'

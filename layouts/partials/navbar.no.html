@@ -1,0 +1,86 @@
+{{/*  TODO: Make sticky/fixed when scrolling  */}}
+<div class="notification is-primary not-notification has-text-centered">
+  We are running a <b>limited time offer</b> for our new QuickCheck service. Get a jumpstart on identifying the security vulnerabilities and weaknesses in your networks and IT systems. <a href="/services/quickcheck">Read more and order here!</a>
+</div>
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/no/">
+        <img src="/images/logos/kovert-negative.png">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link is-arrowless" href="#">
+            TJENESTER
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/no/services/attack-surface-management/">
+              ATTACK SURFACE MANAGEMENT
+            </a>
+            <a class="navbar-item" href="/no/services/penetration-testing/">
+              PENETRASJONSTESTING
+            </a>
+            <a class="navbar-item" href="/no/services/quickcheck/">
+              QUICKCHECK
+            </a>
+            <a class="navbar-item" href="/no/services/adversary-simulation/">
+              ADVERSARY SIMULATION
+            </a>
+            <a class="navbar-item" href="/no/services/trainings/">
+              KURS OG TRENING
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-item is-nav-link">
+          <a class="" href="/no/our-story/">HISTORIE</a>
+        </div>
+
+        <div class="navbar-item is-nav-link">
+          <a class="" href="/no/careers/">KARRIERE</a>
+        </div>
+
+        <div class="navbar-item is-nav-link">
+          <a class="button navbar-button is-info is-outlined" href="https://merch.kovert.no/">MERCH</a>
+        </div>
+
+        <div class="navbar-item is-nav-link">
+          <a class="button navbar-button" href="/no/contact/">KONTAKT OSS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+
+});
+</script>
