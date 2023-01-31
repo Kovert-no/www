@@ -9,12 +9,6 @@ font-weight: normal;
 src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_Rage.woff') format('woff');
 }
 
-
-:root{
-  font-size:3vw;
-}
-
-
 .grid{
   position:absolute;
   bottom: -30%;
@@ -39,7 +33,6 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   }
 }
 
-
 .sun{
   width:200px;
   height:200px;
@@ -58,9 +51,7 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
     -50% 92%,150% 92%,150% 95%,0 95%,
     -50% 96%,150% 96%,150% 150%,0 150%);
     box-shadow: rgba(255,128,0,0.7) 0px 0 20px;
-    
 }
-
 
 .mountain{
   position:absolute;
@@ -98,8 +89,6 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   pointer-events: none;
 }
 
-
-
 .background-80s{
   background: linear-gradient(to bottom, #010310 0,#0c1142 24%,#45125e 45%,#d53567 60%,#f0c3d9 65%,#0c1142 65%) fixed;
   background-size:100% var(--background-height,100vh);
@@ -111,7 +100,6 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   height:var(--background-height,100vh);
   z-index:-2;
 }
-
 
 .animated-clouds:before{
   filter: url(#filter);
@@ -140,7 +128,7 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   left:0;
   top:0;
   z-index:-1;
-  box-shadow: 
+  box-shadow:
     5vw 15vh 2px white,
     1vw 33vh 0px white,
     2vw 25vh 2px white,
@@ -177,7 +165,6 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   50% {
     opacity:0.9;
   }
-  
   100% {
     opacity:0.5;
   }
@@ -192,14 +179,12 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   white-space:nowrap;
 }
 .outrun{
-  
   font-family:'Road Rage';
   font-weight:normal;
   font-size: 50px;
 }
 
 .glow {
-  
   color: #fff;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -216,24 +201,21 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   }
 }
 
-
 .chrome{
   font-family:"Montserrat";
   font-weight:900;
-  font-size:calc(30px + 10vh);
+  font-size:calc(10px + 10vh);
   background-image:linear-gradient(#2989cc 0%, #d3e5ec 50%,#592451 51%,#b3628d 55%,#592451 59%,#b3628d 65%,#ac86a6 75%, #b3628d 100%);
   -webkit-background-clip:text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255,255,255,0.4);
   position:relative;
-  
-  
 }
 
 .chrome:before{
   content:attr(data-text);
-  text-shadow: -1px -1px 1px #2989cc,-2px -2px 1px #2989cc, -3px -3px 1px #2989cc, 1px 1px 1px #000, 0px -1px 2px #000, -1px -2px 2px #000, 0 0 5px rgba(255,255,255,1); 
+  text-shadow: -1px -1px 1px #2989cc,-2px -2px 1px #2989cc, -3px -3px 1px #2989cc, 1px 1px 1px #000, 0px -1px 2px #000, -1px -2px 2px #000, 0 0 5px rgba(255,255,255,1);
   opacity:1;
   position:absolute;
   z-index:-1;
@@ -291,9 +273,6 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
   100% {transform: scale(1) rotate(180deg);}
 }
 
-
-
-
 .road {
   --grid-size:90px;
   --road-color:#2a025d;
@@ -312,11 +291,28 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
 .road:after {
   content:'';
   --grid-size:90px;
-  position:absolute;  
+  position:absolute;
   margin-left: calc(50% - 10px /2 );
   width: 10px;
   height: 100%;
   background-position-y: 0px;
   background-image: repeating-linear-gradient(0deg, #a684cb 0%, #a684cb 10%, transparent 10%, transparent 20%);
   animation:moving-grid 0.5s infinite linear;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    display: none;
+  }
+  .text > .chrome {
+    font-size: 4em !important;
+  }
 }
