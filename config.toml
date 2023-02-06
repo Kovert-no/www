@@ -1,6 +1,22 @@
 baseURL = 'https://kovert.no'
-languageCode = 'en-us'
 title = 'Kovert'
+defaultContentLanguage = 'no'
 
 [sitemap]
   filename = 'sitemap.xml'
+
+[languages]
+  [languages.no]
+    languageName = 'Norwegian'
+    weight = 1
+    languageCode = 'no-nb'
+    title = 'Kovert'
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+    languageCode = 'en-us'
+    title = 'Kovert'
+
+[params]
+  notification = 'Vi kjører en <b>begrenset kampanje</b> på vår nye tjeneste QuickCheck. Kom i gang med å identifisere svakhetene i din digitale infrastruktur. <a href="/services/quickcheck">Les mer og bestill her!</a>'
+  notification_en = 'We are running a <b>limited time offer</b> for our new QuickCheck service. Get a jumpstart on identifying the security vulnerabilities and weaknesses in your networks and IT systems. <a href="/en/services/quickcheck">Read more and order here!</a>'

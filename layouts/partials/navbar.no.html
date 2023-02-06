@@ -1,69 +1,67 @@
 {{/*  TODO: Make sticky/fixed when scrolling  */}}
 {{ if .Site.Params.notification }}
 <div class="notification is-primary not-notification has-text-centered">
-  {{ .Site.Params.notification_en | safeHTML }}
+  {{ .Site.Params.notification | safeHTML }}
 </div>
 {{end}}
 <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
-    
+
     <div class="navbar-brand">
-      <a class="navbar-item" href="/en/">
+      <a class="navbar-item" href="/">
         <img src="/images/logos/kovert-negative.png">
       </a>
-      
+
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-    
+
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link is-arrowless" href="#">
-            SERVICES
+            TJENESTER
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="/en/services/attack-surface-management/">
+            <a class="navbar-item" href="/tjenester/attack-surface-management/">
               ATTACK SURFACE MANAGEMENT
             </a>
-            <a class="navbar-item" href="/en/services/penetration-testing/">
-              PENETRATION TESTING
+            <a class="navbar-item" href="/tjenester/penetrasjonstesting/">
+              PENETRASJONSTESTING
             </a>
-            <a class="navbar-item" href="/en/services/quickcheck/">
+            <a class="navbar-item" href="/tjenester/quickcheck/">
               QUICKCHECK
             </a>
-            <a class="navbar-item" href="/en/services/adversary-simulation/">
+            <a class="navbar-item" href="/tjenester/adversary-simulation/">
               ADVERSARY SIMULATION
             </a>
-            <a class="navbar-item" href="/en/services/trainings/">
-              TRAININGS
+            <a class="navbar-item" href="/tjenester/kurs-og-opplaering">
+              KURS OG TRENING
             </a>
-
           </div>
         </div>
-        
+
         <div class="navbar-item is-nav-link">
-          <a class="" href="/en/our-story/">OUR STORY</a>
+          <a class="" href="/historie/">HISTORIE</a>
         </div>
-        
-        
+
         <div class="navbar-item is-nav-link">
-          <a class="" href="/en/careers/">CAREERS</a>
+          <a class="" href="/karriere/">KARRIERE</a>
         </div>
 
         <div class="navbar-item is-nav-link">
           <a class="button navbar-button is-info is-outlined" href="https://merch.kovert.no/">MERCH</a>
         </div>
-        
+
         <div class="navbar-item is-nav-link">
-          <a class="button navbar-button" href="/en/contact/">CONTACT US</a>
+          <a class="button navbar-button" href="/kontakt/">KONTAKT OSS</a>
         </div>
-        
+
         <div class="navbar-item is-nav-link">
-          <a style="padding-top:5px" href="/"><img src="/images/Norwegian.png"></a>
+          <a style="padding-top:5px" href="/en/"><img src="/images/English.png"></a>
         </div>
       </div>
     </div>

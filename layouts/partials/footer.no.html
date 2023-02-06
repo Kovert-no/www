@@ -1,0 +1,38 @@
+<footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <a href="/no/">
+            <img src="/images/logos/kovert-negative.png" width="150" alt="Link til forsiden">
+          </a>
+        </div>
+        <div class="column">
+          <ul>
+            <li><a href="/historie/">HISTORIE</a></li>
+            <li><a href="/karriere/">KARRIERE</a></li>
+            <li><a href="https://merch.kovert.no/">MERCH</a></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+            <li><a href="/tjenester/attack-surface-management/">ATTACK SURFACE MANAGEMENT</a></li>
+            <li><a href="/tjenester/penetrasjonstesting/">PENETRASJONSTESTING</a></li>
+            <li><a href="/tjenester/kurs-og-opplaering/">KURS OG OPPLÆRING</a></li>
+            <li><a href="/tjenester/adversary-simulation/">ADVERSARY SIMULATION</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <a class="button navbar-button" href="/kontakt/">KONTAKT OSS</a>
+        </div>
+        <div class="column">
+          <p>Også tilgjengelig på:</p>
+          <ul>
+          {{ range $.Site.Home.AllTranslations }}
+          <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
