@@ -1,12 +1,14 @@
 {{/*  TODO: Make sticky/fixed when scrolling  */}}
+{{ if .Site.Params.notification }}
 <div class="notification is-primary not-notification has-text-centered">
-  We are running a <b>limited time offer</b> for our new QuickCheck service. Get a jumpstart on identifying the security vulnerabilities and weaknesses in your networks and IT systems. <a href="/services/quickcheck">Read more and order here!</a>
+  {{ .Site.Params.notification | safeHTML }}
 </div>
+{{end}}
 <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
 
     <div class="navbar-brand">
-      <a class="navbar-item" href="/no/">
+      <a class="navbar-item" href="/">
         <img src="/images/logos/kovert-negative.png">
       </a>
 
@@ -24,30 +26,30 @@
             TJENESTER
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="/no/services/attack-surface-management/">
+            <a class="navbar-item" href="/tjenester/attack-surface-management/">
               ATTACK SURFACE MANAGEMENT
             </a>
-            <a class="navbar-item" href="/no/services/penetration-testing/">
+            <a class="navbar-item" href="/tjenester/penetrasjonstesting/">
               PENETRASJONSTESTING
             </a>
-            <a class="navbar-item" href="/no/services/quickcheck/">
+            <a class="navbar-item" href="/tjenester/quickcheck/">
               QUICKCHECK
             </a>
-            <a class="navbar-item" href="/no/services/adversary-simulation/">
+            <a class="navbar-item" href="/tjenester/adversary-simulation/">
               ADVERSARY SIMULATION
             </a>
-            <a class="navbar-item" href="/no/services/trainings/">
+            <a class="navbar-item" href="/tjenester/kurs-og-opplaering">
               KURS OG TRENING
             </a>
           </div>
         </div>
 
         <div class="navbar-item is-nav-link">
-          <a class="" href="/no/our-story/">HISTORIE</a>
+          <a class="" href="/historie/">HISTORIE</a>
         </div>
 
         <div class="navbar-item is-nav-link">
-          <a class="" href="/no/careers/">KARRIERE</a>
+          <a class="" href="/karriere/">KARRIERE</a>
         </div>
 
         <div class="navbar-item is-nav-link">
@@ -55,7 +57,11 @@
         </div>
 
         <div class="navbar-item is-nav-link">
-          <a class="button navbar-button" href="/no/contact/">KONTAKT OSS</a>
+          <a class="button navbar-button" href="/kontakt/">KONTAKT OSS</a>
+        </div>
+
+        <div class="navbar-item is-nav-link">
+          <a style="padding-top:5px" href="/en/"><img src="/images/English.png"></a>
         </div>
       </div>
     </div>
