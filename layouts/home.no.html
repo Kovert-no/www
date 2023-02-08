@@ -14,15 +14,15 @@
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
-                    <div class="column is-6">
-                        <h1 class="title is-1">Vi finner <span class="highlight">svakhetene</span> før skurkene gjør det</h1>
+                    <div class="column is-6 hero-left">
+                        <h1 class="title is-1">Vi finner <span class="highlight-block"><span class="highlight"></span></span> før <span class="highlight">skurkene</span> gjør det</h1>
                         <h2 class="subtitle is-3">Kovert tenker som hackerne og er spesialister på sikkerhetstesting.</h2>
                         <p class="buttons">
                             <a href="kontakt/" class="button is-medium">SNAKK MED EN EKSPERT</a>
                         </p>
                     </div>
-                    <div class="column">
-                      <img src="/images/page1.png" alt="">
+                    <div class="column hero-right">
+                      <img src="/images/martin-frontpage.png" alt="">
                     </div>
                 </div>
             </div>
@@ -31,20 +31,27 @@
             <nav class="tabs is-boxed is-fullwidth">
             <div class="container">
                 <p  class="has-text-centered">MED TILLIT FRA</p>
-                <div class="columns trustedbycolumns is-vcentered">
-                  <div class="column has-text-centered">
-                    <img src="/images/logos/arctic-securities.png" alt="logo: Arctic securities">
+                <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img src="/images/logos/arctic-securities.png" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/logos/ecit.png" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/logos/oda.png" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/logos/ekornes.png" alt="">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/logos/nordicbraintech.png" alt="">
+                      </li>
+                    </ul>
                   </div>
-                  <div class="column has-text-centered">
-                    <img src="/images/logos/oda.png" alt="logo: Oda">
-                  </div>
-                  <div class="column has-text-centered">
-                      <img src="/images/logos/ekornes.png" alt="logo: Ekornes">
-                  </div>
-                  <div class="column has-text-centered">
-                    <img src="/images/logos/nordicbraintech.png" alt="logo: Nordic Brain Tech">
-                </div>
-                </div>
+                </section>
             </div>
             </nav>
         </div>
@@ -187,6 +194,15 @@
                       <i class="fas fa-envelope"></i>
                     </span>
                   </div>
+                </div>         
+                <div class="field">
+                  <label class="label">Phone</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="tel" name="tel" placeholder="Phone number">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-phone"></i>
+                    </span>
+                  </div>
                 </div>
                 <div class="field">
                   <label class="label">Message</label>
@@ -322,6 +338,36 @@
     },
     "retina_detect": true
   });
+</script>
+<script src="/js/typed.js"></script>
+<script>
+  var options = {
+  strings: ['sikkerhetshullene', 'sårbarhetene', 'svakhetene'],
+  typeSpeed: 75,
+  backSpeed: 25,
+  loop: true,
+  showCursor: false,
+  smartBackspace: true,
+};
+var typed = new Typed('.highlight', options);
+</script>
+<script src="/js/splide.min.js"></script>
+<script src="/js/splide-extension-auto-scroll.min.js"></script>
+<link href="/css/splide.min.css" rel="stylesheet">
+<script>
+  new Splide( '#image-carousel', {
+    type: 'loop',
+    perPage: 3,
+    speed: 40,
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+      speed: 1,
+      pauseOnHover: false,
+      pauseOnFocus: false
+    },
+
+  } ).mount( window.splide.Extensions );
 </script>
 </body>
 </html>

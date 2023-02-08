@@ -46,3 +46,22 @@
 .feature-light .card-middle .card-footer {
     border-top: 1px solid #ededed3c;
 }
+
+.hero-left {
+    margin-top:169px;
+}
+.hero-right {
+    text-align: center;
+}
+
+.hero-right img {
+    height:55em;
+}
+.hero-foot {
+    margin-bottom: 50px;
+}
+
+.highlight-block {
+    display:block;
+}
+
