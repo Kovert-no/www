@@ -10,6 +10,17 @@ body {
     background: none !important;
 }
 
+.transition-green-to-white:first-of-type {
+    height: 5vw;
+    background-color: #0b9934;
+    clip-path: polygon(
+        0 -1%,
+        101% -1%,
+        101% 100%,
+        0 0
+    );
+}
+
 .card {
     border-color: #043712;
     border-width: 1px;

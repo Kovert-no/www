@@ -2,7 +2,7 @@ html, body {
     overflow-x: hidden;
 }
 
-body {   
+body { 
     min-height: 100vh;
 }
 
@@ -11,7 +11,7 @@ body {
         background-color: #043712;
         box-shadow: 0 8px 16pxrgba(10,10,10,.1);
         padding: 0.5rem 0;
-}
+    }
 }
 
 @media screen and (min-width: 1408px){
@@ -32,7 +32,7 @@ body {
 }
 }
 .hero {
-    background-image: linear-gradient(#043712, #0b822c);
+    background-image: linear-gradient(#043712, #0ca438 111%);
 }
 .hero #particles-js {
     /*background-image: linear-gradient(#06531c, #0ca438);*/
@@ -49,21 +49,21 @@ body {
     height: 5vw;
     background-color: #0b822c;
     clip-path: polygon(
-    0 -1%,
-    101% -1%,
-    101% 100%,
-    0 0
-  );
+        0 -1%,
+        101% -1%,
+        101% 100%,
+        0 0
+    );
 }
 
 .transition-white-to-green {
     height: 5vw;
     background-color: #043712;
     clip-path: polygon(
-    0 101%,
-    100% 0,
-    100% 101%
-  );
+        0 101%,
+        100% 0,
+        100% 101%
+    );
 }
 
 .navbar {
@@ -85,7 +85,6 @@ body {
 
 .navbar a {
     color: white;
-    
 }
 
 .navbar-link:hover {
@@ -148,12 +147,10 @@ span.highlight-inverse {
     background-color: white;
     border-color: #0ca438;
     border-radius: 0;
-    
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .hero-body .button:hover {
-    
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 66px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
@@ -282,12 +279,12 @@ span.highlight-inverse {
 }
 
 .nofilter {
-    filter: none !important; 
+    filter: none !important;
 }
 
 .linkedin-embed {
     height: 600px;
-    width: 100%;   
+    width: 100%;
 }
 .is-zoomed {
     width: 50%;
@@ -325,7 +322,6 @@ span.highlight-inverse {
     background-color: white;
     border-color: #0ca438;
     border-radius: 0;
-    
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
