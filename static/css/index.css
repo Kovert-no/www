@@ -15,7 +15,6 @@
     border-style: solid;
     display: flex;
     flex-direction: column;
-    height: 100%;
     transition: linear 0.2s;
 }
 
