@@ -371,6 +371,13 @@ span.highlight-inverse {
     .container {
         padding: 0 30px !important;
     }
+
+    .container a.button {
+      max-width: 100% !important;
+      white-space: pre-wrap;
+      text-overflow: ellipsis;
+    }
+
     .hero.is-fullheight .hero-body > .container {
         padding: 0 0 !important;
     }
@@ -402,4 +409,11 @@ span.highlight-inverse {
 .not-notification{
     border-radius: 0;
     margin-bottom: 0!important;
+}
+
+.button.is-multiline {
+  min-height: 2.25em;
+  white-space: unset;
+  height: auto;
+  flex-direction: column;
 }
