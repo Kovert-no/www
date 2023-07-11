@@ -16,8 +16,12 @@
         </div>
         <div class="column">
           <ul>
-            <li><a href="/tjenester/attack-surface-management/">ATTACK SURFACE MANAGEMENT</a></li>
+            <!-- <li><a href="/tjenester/attack-surface-management/">ATTACK SURFACE MANAGEMENT</a></li> -->
             <li><a href="/tjenester/penetrasjonstesting/">PENETRASJONSTESTING</a></li>
+            <li><a href="/tjenester/sikkerhet-i-skyen/">SIKKERHET I SKYEN</a></li>
+            <li><a href="/tjenester/applikasjons-testing/">APPLIKASJONSTESTING</a></li>
+            <li><a href="/tjenester/iot-produkt-sikkerhet/">IOT OG PRODUKTSIKKERHET</a></li>
+            <li><a href="/tjenester/quickcheck/">QUICKCHECK</a></li>
             <li><a href="/tjenester/kurs-og-opplaering/">KURS OG OPPLÆRING</a></li>
             <li><a href="/tjenester/adversary-simulation/">ADVERSARY SIMULATION</a></li>
           </ul>
@@ -26,11 +30,8 @@
           <a class="button navbar-button" href="/kontakt/">KONTAKT OSS</a>
         </div>
         <div class="column">
-          <p>Også tilgjengelig på:</p>
           <ul>
-          {{ range $.Site.Home.AllTranslations }}
-          <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-          {{ end }}
+            <li><a style="padding-top:5px" href="/en/"><img class="image is-32x32" src="/images/English.png"></a></li>
           </ul>
         </div>
       </div>

@@ -8,29 +8,30 @@
         </div>
         <div class="column">
           <ul>
-            <li><a href="our-story/">OUR STORY</a></li>
-            <li><a href="careers/">CAREERS</a></li>
+            <li><a href="/en/our-story/">OUR STORY</a></li>
+            <li><a href="/en/careers/">CAREERS</a></li>
             <li><a href="https://merch.kovert.no/">BUY OUR MERCH</a></li>
-            <li><a href="/privacy-policy">PRIVACY POLICY</a></li>
+            <li><a href="/privacy-policy/">PRIVACY POLICY</a></li>
           </ul>
         </div>
         <div class="column">
           <ul>
-            <li><a href="services/attack-surface-management/">ATTACK SURFACE MANAGEMENT</a></li>
-            <li><a href="services/penetration-testing/">PENETRATION TESTING</a></li>
-            <li><a href="services/trainings/">TRAININGS</a></li>
-            <li><a href="services/adversary-simulation/">ADVERSARY SIMULATION</a></li>
+            <!-- <li><a href="services/attack-surface-management/">ATTACK SURFACE MANAGEMENT</a></li> -->
+            <li><a href="/en/services/penetration-testing/">PENETRATION TESTING</a></li>
+            <li><a href="/en/services/cloud-security/">CLOUD SECURITY</a></li>
+            <li><a href="/en/services/application-testing/">APPLICATION TESTING</a></li>
+            <li><a href="/en/services/iot-product-security/">IOT AND PRODUCT SECURITY</a></li>
+            <li><a href="/en/services/quickcheck/">QUICKCHECK</a></li>
+            <li><a href="/en/services/trainings/">TRAININGS</a></li>
+            <li><a href="/en/services/adversary-simulation/">ADVERSARY SIMULATION</a></li>
           </ul>
         </div>
         <div class="column">
-          <a class="button navbar-button" href="/contact/">GET IN TOUCH</a>
+          <a class="button navbar-button" href="/en/contact/">GET IN TOUCH</a>
         </div>
         <div class="column">
-          <p>Also available in:</p>
           <ul>
-          {{ range $.Site.Home.AllTranslations }}
-          <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-          {{ end }}
+            <li><a style="padding-top:5px" href="/"><img class="image is-32x32" src="/images/Norwegian.png"></a></li>
           </ul>
         </div>
       </div>

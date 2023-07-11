@@ -1,12 +1,21 @@
+.transition-green-to-white:first-of-type {
+    height: 5vw;
+    background-color: #0b9934;
+    clip-path: polygon(
+        0 -1%,
+        101% -1%,
+        101% 100%,
+        0 0
+    );
+}
+
 .card {
-    /*background: linear-gradient(to right, #096c25, #0a7328);*/
     border-color: #043712;
     border-width: 1px;
     border-style: solid;
-    border-radius: 0;
-    /*box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%)
-    */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    transition: linear 0.2s;
 }
 
 .card h1 {
@@ -15,36 +24,45 @@
 
 .card-footer {
     border-top: 1px solid #054316;
+    background-color: #404040;
+    transition: ease 0.2s;
+}
+.card:hover > .card-footer {
+    background-color: #0ca438;
+    color: #404040;
+    transition: ease 0.2s;
+}
+.card-image img {
+    filter: opacity(80%);
+    transition: ease 0.2s;
+    margin-top: 25px;
+
+    padding: calc(5px +  10px); /* Gap + Border thickness */
+    --_g: #0000 25%, #0ca438 0;
+    background:
+        conic-gradient(from 180deg at top     10px right  10px,var(--_g))
+        var(--_i,200%) 0  /200% var(--_i, 10px)  no-repeat,
+        conic-gradient(            at bottom  10px left   10px,var(--_g))
+        0   var(--_i,200%)/var(--_i, 10px) 200%  no-repeat !important;
+    transition: .3s, background-position .3s .3s;
+}
+.card:hover img {
+    transform: scale(1.1);
+    filter: opacity(100%);
+    transition: ease 0.2s;
+    color: #0ca438;
+
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
 }
 
-.card-footer a{
-    color: #054316;
-}
-
-.card-middle .card-footer a {
-    color: white
-}
-.card-middle img {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(137deg) brightness(103%) contrast(101%);
-}
-
-.column-middle {
-    padding: 0px;
-}
-
-.feature-light .card-middle {
-    background: linear-gradient(to right, #085e20, #096824);
-}
-
-.feature-light .card-middle .card-content {
-    color: #a6dcb5;
-}
-.feature-light .card-middle h1{
+.card-footer a {
     color: white;
+    font-size: large;
 }
 
-.feature-light .card-middle .card-footer {
-    border-top: 1px solid #ededed3c;
+.card-block, .card-content {
+    height: 100%;
 }
 
 .hero-left {
@@ -65,3 +83,14 @@
     display:block;
 }
 
+.r-1 {
+    border-radius: 0.5em;
+}
+
+.r-2 {
+    border-radius: 1em;
+}
+
+.r-3 {
+    border-radius: 2em;
+}
