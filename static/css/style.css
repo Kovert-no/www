@@ -16,7 +16,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
     .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
         background-color: #043712;
     }
@@ -24,6 +24,7 @@ body {
     .navbar-link:hover {
         background-color: #043712;
     }
+
     .navbar-menu {
         background-color: #043712;
         box-shadow: 0 8px 16pxrgba(10,10,10,.1);
@@ -33,13 +34,19 @@ body {
     .column > a.button {
         width: 100% !important;
     }
+
+    .section-title {
+      font-size: 2rem !important;
+    }
+
+    figure.hero-right {
+      max-height: 80vh;
+    }
 }
 .hero {
-    background-image: linear-gradient(#043712, #0ca438 111%);
+    background-image: linear-gradient(#043712, #0b9934);
 }
 .hero #particles-js {
-    /*background-image: linear-gradient(#06531c, #0ca438);*/
-    background-image: linear-gradient(#043712, #0b822c);
     position: absolute;
     top: 0;
     left: 0;
@@ -50,7 +57,7 @@ body {
 
 .transition-green-to-white {
     height: 5vw;
-    background-color: #0b822c;
+    background-color: #0b9934;
     clip-path: polygon(
         0 -1%,
         101% -1%,
@@ -188,7 +195,7 @@ span.highlight-inverse {
 
 .feature-dark {
     background-color: #3c3c3b;
-    background-image: linear-gradient(#043712, #0b822c);
+    background-image: linear-gradient(#043712, #0b9934);
 }
 
 .feature-dark .subtitle {
@@ -369,7 +376,7 @@ span.highlight-inverse {
     }
 
     .container {
-        padding: 0 30px !important;
+        padding: 0 0 !important;
     }
 
     .container a.button {
@@ -388,6 +395,10 @@ span.highlight-inverse {
     }
     .listwrapper ul {
         width: auto;
+    }
+
+    .is-small-mobile {
+      max-height: 50% !important;
     }
 }
 

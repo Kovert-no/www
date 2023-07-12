@@ -72,8 +72,12 @@
     text-align: center;
 }
 
+figure.hero-right {
+    height: 55em;
+}
 .hero-right img {
-    height:55em;
+    height: 100%;
+    width: auto;
 }
 .hero-foot {
     margin-bottom: 50px;
@@ -93,4 +97,15 @@
 
 .r-3 {
     border-radius: 2em;
+}
+
+.hero-body {
+  padding-bottom: 0;
+  margin-bottom: -2em;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-right img {
+    height: 30em;
+  }
 }
