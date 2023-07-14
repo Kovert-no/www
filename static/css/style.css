@@ -37,10 +37,11 @@ body {
 
     .section-title {
       font-size: 2rem !important;
+      margin-top: 0 !important;
     }
 
     figure.hero-right {
-      max-height: 80vh;
+      max-height: 60vh !important;
     }
 }
 .hero {
@@ -376,7 +377,7 @@ span.highlight-inverse {
     }
 
     .container {
-        padding: 0 0 !important;
+        padding: 0 20px !important;
     }
 
     .container a.button {
@@ -395,6 +396,11 @@ span.highlight-inverse {
     }
     .listwrapper ul {
         width: auto;
+    }
+
+    .card-image figure {
+      max-width: 60% !important;
+      margin: auto auto;
     }
 
     .is-small-mobile {
