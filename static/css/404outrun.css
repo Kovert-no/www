@@ -316,3 +316,8 @@ src: local('RoadRage'), url('http://coding-dude.com/wp/wp-content/uploads/Road_R
     font-size: 4em !important;
   }
 }
+
+body {
+  background-color: rgba(0, 0, 0, 0.0);
+  background-image: none !important;
+}
