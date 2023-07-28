@@ -3,7 +3,7 @@
 {{ .Content }}
 
 <div class="container content listPageContent">
-  {{ range where .RegularPagesRecursive "Params.lang" "no"  }}
+  {{ range .Pages }}
     <div class="card">
         <div class="card-content">
             <div class="content">
