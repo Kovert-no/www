@@ -238,6 +238,9 @@ span.highlight-inverse {
     min-height: 80vh;
     padding-top: 40px;
 }
+.listPageContent.blog > div:nth-child(even) > div {
+    flex-direction: row-reverse;
+}
 .footer {
     background-color: #043712;
     color:white;
@@ -433,4 +436,12 @@ span.highlight-inverse {
   white-space: unset;
   height: auto;
   flex-direction: column;
+}
+
+.mountains {
+    background-image: url('/images/mountains.svg');
+    background-color: #043712;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 400px;
 }
