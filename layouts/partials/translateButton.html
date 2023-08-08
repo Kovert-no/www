@@ -1,0 +1,23 @@
+{{ if eq .Lang "no" }}
+
+  <!-- If this page has an english translation, link to it. Otherwise, link to the front page -->
+  {{ $translatedURL := "/en" }}
+  {{ range .Translations }}
+    {{ if eq .Lang "en" }}
+      {{ $translatedURL = .RelPermalink }}
+    {{ end }}
+  {{ end }}
+  <a href="{{ $translatedURL }}" aria-label="View in English"><img style="max-height: none" class="image is-32x32" src="/images/English.png"></a>
+
+{{ else }}
+
+  <!-- If this page has a norwegian translation, link to it. Otherwise, link to the front page -->
+  {{ $translatedURL := "/" }}
+  {{ range .Translations }}
+    {{ if eq .Lang "no" }}
+      {{ $translatedURL = .RelPermalink }}
+    {{ end }}
+  {{ end }}
+  <a href="{{ $translatedURL }}" aria-label="View in Norwegian"><img style="max-height: none" class="image is-32x32" src="/images/Norwegian.png"></a>
+
+{{ end }}
