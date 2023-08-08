@@ -17,16 +17,17 @@
         </div>
         <div class="card-image column">
           <figure class="image">
-            <a href="{{ .Permalink }}">
-              {{/* This is fragile, should use resource.Get */}}
-              <img src="{{ .Permalink }}{{ .Params.feature_image }}" alt="{{ .Title }} featured image">
+            <a href="{{ .RelPermalink }}">
+              {{ with .Resources.GetMatch .Params.feature_image }}
+                <img src="{{ .RelPermalink }}" alt="{{ .Title }} featured image">
+              {{ end }}
             </a>
           </figure>
         </div>
       </div>
     </div>
     <footer class="card-footer">
-      <a href="{{ .Permalink }}" class="card-footer-item">Read more</a>
+      <a href="{{ .RelPermalink }}" class="card-footer-item">Read more</a>
     </footer>
   </div>
   {{ end }}
