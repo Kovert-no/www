@@ -1,12 +1,11 @@
 {{ define "main" }}
-{{/*  <div class="transition-green-to-white"></div>  */}}
-<div class="container content listPageContent">
 {{ .Content }}
-{{ range .Pages }}
+<div class="container content listPageContent">
+  {{ range .Pages }}
     <div class="card">
         <div class="card-content">
             <div class="content">
-                <h3>{{.Title}}</h3> 
+                <h3>{{.Title}}</h3>
                 <p>{{.Summary}}</p>
                 <br>
             </div>

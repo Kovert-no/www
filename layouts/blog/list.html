@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ .Content }}
+<div class="container content listPageContent blog">
+  {{ range .Pages }}
+  <div class="card my-3">
+    <div class="card-content">
+      <div class="columns">
+        <div class="media m-3 column is-7">
+          <div class="media-content">
+            <p class="title is-4">{{ .Title }}</p>
+            <p class="subtitle is-6">{{ .Params.author }}</p>
+            <br>
+            {{ .Summary }}
+            <br>
+            <time>{{ .Page.Date.Format "January 2, 2006" }}</time>
+          </div>
+        </div>
+        <div class="card-image column">
+          <figure class="image">
+            <a href="{{ .RelPermalink }}">
+              {{ with .Resources.GetMatch .Params.feature_image }}
+                <img src="{{ .RelPermalink }}" alt="{{ .Title }} featured image">
+              {{ end }}
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <footer class="card-footer">
+      <a href="{{ .RelPermalink }}" class="card-footer-item">Read more</a>
+    </footer>
+  </div>
+  {{ end }}
+</div>
+
+<div class="transition-white-to-green"></div>
+{{ end }}
