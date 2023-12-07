@@ -1,0 +1,21 @@
+{{/*
+  Convert and resize images. Defaults to webp format and original size/quality.
+  Usage:
+  {{ partial "resize-image.html" (dict "src" "/images/demo.jpg" "alt" "A Demo Image" "class" "img-class extra-img" "resize" 400x100 png q100" ) }}
+
+  The last argument is optional and can be used to override the default resize.
+*/}}
+
+{{ $src := .src }}
+{{ $image := resources.Get $src }}
+
+{{ $resize := compare.Conditional (isset . "resize")
+  .resize
+  (printf "%dx%d webp q100" $image.Width $image.Height)
+}}
+
+{{ $image := $image.Resize $resize }}
+{{ return $image.RelPermalink }}
+
+
+
