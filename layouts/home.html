@@ -20,7 +20,7 @@
                         <a href="/en/contact/" class="button is-medium">TALK TO AN EXPERT</a>
                     </div>
                     <figure class="column hero-right">
-                        <img src="/images/martin-frontpage.png" alt="Martin Ingesen">
+                        {{ partial "picture.html" (dict "src" "martin-frontpage.png" "alt" "Martin Ingesen" "class" "has-ratio") }}
                     </figure>
                 </div>
               <div class="columns is-hidden-desktop">
@@ -30,7 +30,7 @@
                     <a href="/en/contact/" class="button is-responsive is-multiline">TALK TO AN EXPERT</a>
                   </div>
                   <figure class="column hero-right is-small-mobile">
-                      <img src="/images/martin-frontpage.png" class="has-ratio" alt="Martin Ingesen">
+                      {{ partial "picture.html" (dict "src" "martin-frontpage.png" "alt" "Martin Ingesen" "class" "has-ratio") }}
                   </figure>
               </div>
             </div>
@@ -43,22 +43,22 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img src="/images/logos/skytale.png" alt="Skytale Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/skytale.png" "alt" "Skytale Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/arctic-securities.png" alt="Arctic Securities Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/arctic-securities.png" "alt" "Arctic Securities Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/ecit.png" alt="ECIT Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/ecit.png" "alt" "ECIT Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/oda.png" alt="Oda Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/oda.png" "alt" "Oda Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/ekornes.png" alt="Ekornes Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/ekornes.png" "alt" "Ekornes Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/nordicbraintech.png" alt="Nordic Brain Tech Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/nordicbraintech.png" "alt" "Nordic Brain Tech Logo") }}
                                 </li>
                             </ul>
                         </div>
@@ -79,7 +79,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="services/penetration-testing/">
-                                <img src="/images/network.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "network.png" "alt" "Placeholder image" "class" "p-5") }}
                             </a>
                         </figure>
                     </div>
@@ -99,7 +99,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="services/cloud-security/">
-                                <img src="/images/cloud.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "cloud.png" "alt" "Placeholder image" "class" "p-5") }}
                             </a>
                         </figure>
                     </div>
@@ -119,7 +119,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="services/application-testing/">
-                                <img src="/images/vulnerability.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "vulnerability.png" "alt" "Placeholder image" "class" "p-5") }}
                             </a>
                         </figure>
                     </div>
@@ -141,7 +141,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="services/trainings/">
-                                <img src="/images/presentation.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "presentation.png" "alt" "Placeholder image" "class" "p-5") }}
                             </a>
                         </figure>
                     </div>
@@ -161,7 +161,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="services/iot-product-security/">
-                                <img src="/images/iot.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "iot.png" "alt" "Placeholder image" "class" "p-5") }}
                             </a>
                         </figure>
                     </div>
@@ -181,7 +181,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="services/adversary-simulation/">
-                                <img src="/images/hacker.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "hacker.png" "alt" "Placeholder image" "class" "p-5") }}
                             </a>
                         </figure>
                     </div>
@@ -211,7 +211,7 @@
         <div class="columns">
             <div class="column">
                 <div class="img-container">
-                    <img src="/images/experts.png" alt="">
+                    {{ partial "picture.html" (dict "src" "experts.png") }}
                 </div>
                 <h1 class="title">Technical<br>Experts</h1>
                 <h2>The Kovert team is comprised of experts with year of experience doing offensive security work from both public and private sectors.</h2>

@@ -20,7 +20,7 @@
                         <a href="kontakt/" class="button is-medium">SNAKK MED EN EKSPERT</a>
                     </div>
                     <figure class="column hero-right">
-                        <img src="/images/martin-frontpage.png" class="has-ratio" alt="Martin Ingesen">
+                        {{ partial "picture.html" (dict "src" "martin-frontpage.png" "alt" "Martin Ingesen" "class" "has-ratio") }}
                     </figure>
                 </div>
                 <div class="columns is-hidden-desktop">
@@ -30,7 +30,7 @@
                       <a href="kontakt/" class="button is-responsive is-multiline">SNAKK MED EN EKSPERT</a>
                     </div>
                     <figure class="column hero-right is-small-mobile">
-                        <img src="/images/martin-frontpage.png" class="has-ratio" alt="Martin Ingesen">
+                        {{ partial "picture.html" (dict "src" "martin-frontpage.png" "alt" "Martin Ingesen" "class" "has-ratio") }}
                     </figure>
                 </div>
             </div>
@@ -43,22 +43,22 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img src="/images/logos/skytale.png" alt="Skytale Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/skytale.png" "alt" "Skytale Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/arctic-securities.png" alt="Artic Securities Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/arctic-securities.png" "alt" "Artic Securities Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/ecit.png" alt="ECIT Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/ecit.png" "alt" "ECIT Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/oda.png" alt="Oda Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/oda.png" "alt" "Oda Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/ekornes.png" alt="Ekornes Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/ekornes.png" "alt" "Ekornes Logo") }}
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="/images/logos/nordicbraintech.png" alt="Nordic Brain Tech Logo">
+                                    {{ partial "picture.html" (dict "src" "logos/nordicbraintech.png" "alt" "Nordic Brain Tech Logo") }}
                                 </li>
                             </ul>
                         </div>
@@ -78,7 +78,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="tjenester/penetrasjonstesting/">
-                                <img src="/images/network.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "network.png" "alt" "Nettverk og Penetrasjonstesting") }}
                             </a>
                         </figure>
                     </div>
@@ -98,7 +98,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="tjenester/sikkerhet-i-skyen/">
-                                <img src="/images/cloud.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "cloud.png" "alt" "Sikkerhet i skyen") }}
                             </a>
                         </figure>
                     </div>
@@ -118,7 +118,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="tjenester/applikasjons-testing/">
-                                <img src="/images/vulnerability.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "vulnerability.png" "alt" "Applikasjons-testing") }}
                             </a>
                         </figure>
                     </div>
@@ -140,7 +140,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="tjenester/kurs-og-opplaering/">
-                                <img src="/images/presentation.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "presentation.png" "alt" "Kurs og opplæring") }}
                             </a>
                         </figure>
                     </div>
@@ -160,7 +160,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="tjenester/iot-produkt-sikkerhet/">
-                                <img src="/images/iot.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "iot.png" "alt" "IoT Produktsikkerhet") }}
                             </a>
                         </figure>
                     </div>
@@ -180,7 +180,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <a href="tjenester/adversary-simulation/">
-                                <img src="/images/hacker.png" alt="Placeholder image" class="p-5">
+                                {{ partial "picture.html" (dict "src" "hacker.png" "alt" "Red-team og beredskap") }}
                             </a>
                         </figure>
                     </div>
@@ -209,21 +209,21 @@
         <div class="columns">
             <div class="column is-4">
                 <div class="img-container">
-                    <img src="/images/experts.png" alt="">
+                    {{ partial "picture.html" (dict "src" "experts.png" "alt" "Teknisk ekspertise") }}
                 </div>
                 <h1 class="title">Teknisk<br>Ekspertise</h1>
                 <h2>Kovert-teamet består av eksperter med mange års erfaring med offensiv sikkerhet fra både offentlig og privat sektor.</h2>
             </div>
             <div class="column is-4">
                 <div class="img-container">
-                    <img src="/images/research.png" alt="">
+                    {{ partial "picture.html" (dict "src" "research.png" "alt" "Drevet av avansert research") }}
                 </div>
                 <h1 class="title">Drevet av <br>avansert research</h1>
                 <h2>Kovert har som mål å sette standarden for offensiv sikkerhet. Vi bruker 25% av tiden vår på forskning og utvikling for å forbedre våre kunnskaper og TTP'er.</h2>
             </div>
             <div class="column is-4">
                 <div class="img-container">
-                    <img src="/images/community.png" alt="">
+                    {{ partial "picture.html" (dict "src" "community.png" "alt" "Gir tilbake til fellesskapet") }}
                 </div>
                 <h1 class="title">Gir tilbake<br>til fellesskapet</h1>
                 <h2>Vi jobber for å støtte fellesskapet, og deler vår ekspertise gjennom presentasjoner, bloggposter, events og kurs for å gi tilbake til hele industrien, ikke bare våre kunder.</h2>
@@ -259,7 +259,7 @@
                                             <i class="fas fa-envelope"></i>
                                         </span>
                                     </div>
-                                </div>         
+                                </div>
                                 <div class="field">
                                     <label class="label">Phone</label>
                                     <div class="control has-icons-left">
@@ -275,7 +275,6 @@
                                         <textarea class="textarea" placeholder="Message" name="message"></textarea>
                                     </div>
                                 </div>
-                                
                                 <div class="field">
                                     <div class="control">
                                         <button type="submit" class="button is-success is-fullwidth">Send</button>
