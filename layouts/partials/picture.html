@@ -4,6 +4,8 @@
   {{ partial "picture.html" (dict "src" "demo.jpg" "alt" "A Demo Image" "class" "img-class extra-img" "resize" 400x100 png q100" ) }}
 
   The last argument is optional and can be used to override the default resize.
+  This partial should be used in templates(like the front page, header and footer).
+  For content pages, use the "img"-shortcode instead.
 */}}
 
 {{ $src := .src }}
