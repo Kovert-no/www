@@ -1,5 +1,5 @@
 {{ define "main"}}
-<link href="/css/404outrun.css" rel="stylesheet">
+<link href="{{ (resources.Get "/css/404outrun.css" | resources.Minify).Permalink }}" rel="stylesheet">
 <div class="background-80s animated-clouds stars" style="--background-height:100vh">
     <div class="sun"></div>
     <div class="grid" style="--grid-color:rgba(115,59,139,0.7);--grid-size:30px;--grid-blur:1px;"></div>

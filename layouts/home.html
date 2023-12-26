@@ -3,7 +3,7 @@
 <head>
     {{ partial "head" . }}
     <title>Kovert - We find your weaknesses before the hackers do</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="{{ (resources.Get "/css/index.css" | resources.Minify).Permalink }}">
 </head>
 <body>
     <section class="hero is-fullheight is-transparent">

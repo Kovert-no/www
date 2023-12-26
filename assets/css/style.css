@@ -247,6 +247,14 @@ span.highlight-inverse {
     color:white;
 }
 
+.footer-logo {
+  width: 150px;
+}
+
+.flag-btn {
+  max-height: none !important;
+}
+
 .short-hr {
     width: 75%;
     margin: 30px auto;

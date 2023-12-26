@@ -7,7 +7,9 @@
       {{ $translatedURL = .RelPermalink }}
     {{ end }}
   {{ end }}
-  <a href="{{ $translatedURL }}" aria-label="View in English"><img style="max-height: none" class="image is-32x32" src="/images/English.png"></a>
+  <a href="{{ $translatedURL }}" aria-label="View in English">
+    {{ partial "picture.html" (dict "src" "english.png" "class" "image is-32x32 flag-btn") }}
+  </a>
 
 {{ else }}
 
@@ -18,6 +20,8 @@
       {{ $translatedURL = .RelPermalink }}
     {{ end }}
   {{ end }}
-  <a href="{{ $translatedURL }}" aria-label="View in Norwegian"><img style="max-height: none" class="image is-32x32" src="/images/Norwegian.png"></a>
+  <a href="{{ $translatedURL }}" aria-label="Se på norsk">
+    {{ partial "picture.html" (dict "src" "norwegian.png" "class" "image is-32x32 flag-btn") }}
+  </a>
 
 {{ end }}

@@ -3,7 +3,7 @@
 <head>
     {{ partial "head" . }}
     <title>Kovert - Vi finner svakhetene før skurkene gjør det</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="{{ (resources.Get "/css/index.css" | resources.Minify).Permalink }}">
 </head>
 <body>
     <section class="hero is-fullheight is-transparent">
