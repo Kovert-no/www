@@ -1,0 +1,29 @@
+{{/*
+  Convert and resize images found in /assets. Defaults to webp format and original size/quality.
+  Usage:
+  {{ partial "picture.html" (dict "src" "demo.jpg" "alt" "A Demo Image" "class" "img-class extra-img" "resize" 400x100 png q100" ) }}
+
+  The last argument is optional and can be used to override the default resize.
+  This partial should be used in templates(like the front page, header and footer).
+  For content pages, use the "img"-shortcode instead.
+*/}}
+
+{{ $src := .src }}
+{{ $image := resources.Get $src }}
+
+
+{{ if $image }}
+  {{ $resize := compare.Conditional (isset . "resize")
+    .resize
+    (printf "%dx%d webp q100" $image.Width $image.Height)
+  }}
+
+  {{ $rsImage := $image.Resize $resize }}
+
+  <picture>
+    <source srcset="{{ $rsImage.Permalink }}" type="image/webp">
+    <img src="{{ $image.Permalink }}" alt="{{ .alt }}" class="{{ .class }}">
+  </picture>
+{{ else }}
+  <img src="{{ $src }}" alt="{{ .alt }}" class="{{ .class }}">
+{{ end }}
