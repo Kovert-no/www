@@ -20,3 +20,4 @@ defaultContentLanguage = 'no'
 [params]
   notification = ''
   notification_en = ''
+  enableInlineShortcodes = true
