@@ -56,6 +56,20 @@ body {
     z-index: 0;
 }
 
+.test{
+    background-color: #0b9934;
+}
+.transition-green-to-green {
+    height: 5vw;
+    background-color: #043712;
+    background-image: none;
+    clip-path: polygon(
+        0 101%,
+        100% 0,
+        100% 101%
+    );
+}
+
 .transition-green-to-white {
     height: 5vw;
     background-color: #0b9934;
