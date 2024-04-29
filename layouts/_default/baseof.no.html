@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og:https://ogp.me/ns#">
 <head>
+    {{ block "tagmgrhead" . }}
+    {{ partial "tagmgrhead" . }}
+    {{ end }}
     {{ block "head" . }}
     {{ partial "head" . }}
     {{ end }}
@@ -11,6 +14,9 @@
     </title>
 </head>
 <body>
+    {{ block "tagmgrbody" . }}
+    {{ partial "tagmgrbody.html" . }}
+    {{ end }}
     {{ block "header" . }}
     {{ partial "navbar.no.html" . }}
     {{ end }}

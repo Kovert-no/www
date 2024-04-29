@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
+    {{ partial "tagmgrhead" . }}
     {{ partial "head" . }}
     <title>Kovert - We find your weaknesses before the hackers do</title>
     <link rel="stylesheet" href="{{ (resources.Get "/css/index.css" | resources.Minify).Permalink }}">
 </head>
 <body>
+    {{ partial "tagmgrbody" . }}
     <section class="hero is-fullheight is-transparent">
         <div id="particles-js"></div>
         <div class="hero-head">
