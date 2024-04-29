@@ -1,0 +1,209 @@
+---
+title: "La oss finne dine svakheter og sikkerhetshull før skurkene gjør det!"
+---
+<style>
+  .hero-body>.container>.columns{
+    padding-top: 100px;
+  }
+  .hero-right img {
+    max-height:800px;
+  }
+  .hero-right{
+    text-align: center;
+  }
+  .card-image {
+    padding: 10px;
+  }
+  .feature-light {
+    background-color: #fff;
+    border-radius: 5px;
+}
+#contact-form{
+  background-color: white;
+  border-color:black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  margin:0 200px;
+}
+</style>
+<section class="hero is-fullheight is-transparent">
+    <div id="particles-js"></div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6 hero-left">
+                    <h1 class="title is-1">Takk for din interesse!</h1>
+                    <h2 class="subtitle is-3">En av våre eksperter vil snart ta kontakt for å diskutere dine sikkerhetsbehov og utforske hvordan vi kan bistå deg. Vi ser frem til å tilby skreddersydde løsninger som beskytter din bedrift.</h2>
+                </div>
+                <figure class="column is-6 hero-right is-small-mobile">
+                    {{< img src="/martin-frontpage.png" class="nofilter has-ratio" alt="Martin Ingesen" >}}
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+            <p  class="has-text-centered">MED TILLIT FRA</p>
+            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    {{< img src="/logos/arctic-securities.png" class="nofilter has-ratio" alt="Arctic Securities" >}}
+                  </li>
+                  <li class="splide__slide">
+                    {{< img src="/logos/ecit.png" class="nofilter has-ratio" alt="ECIT" >}}
+                  </li>
+                  <li class="splide__slide">
+                    {{< img src="/logos/oda.png" class="nofilter has-ratio" alt="Oda" >}}
+                  </li>
+                  <li class="splide__slide">
+                    {{< img src="/logos/ekornes.png" class="nofilter has-ratio" alt="Ekornes" >}}
+                  </li>
+                  <li class="splide__slide">
+                    {{< img src="/logos/nordicbraintech.png" class="nofilter has-ratio" alt="Nordic Brain Tech" >}}
+                  </li>
+                </ul>
+              </div>
+            </section>
+        </div>
+        </nav>
+    </div>
+</section>
+
+
+<div class="test">
+  <div class="transition-green-to-green"></div>
+</div>
+
+<script src="/js/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 50,
+        "density": {
+          "enable": true,
+          "value_area": 1000
+        }
+      },
+      "color": {
+        "value": ["#0ca438"]
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 5,
+          "color": "#0ca438"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.6,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 2,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 120,
+        "color": "#0ca438",
+        "opacity": 0.2,
+        "width": 1.6
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "top",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": false
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 140,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+<script src="/js/splide.min.js"></script>
+<script src="/js/splide-extension-auto-scroll.min.js"></script>
+<link href="/css/splide.min.css" rel="stylesheet">
+<script>
+  new Splide( '#image-carousel', {
+    type: 'loop',
+    perPage: 3,
+    speed: 40,
+    arrows: false,
+    pagination: false,
+    autoScroll: {
+      speed: 1,
+      pauseOnHover: false,
+      pauseOnFocus: false
+    },
+
+  } ).mount( window.splide.Extensions );
+</script>

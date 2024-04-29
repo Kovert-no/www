@@ -12,6 +12,7 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         if (response.ok) {
+            window.location.replace("https://kovert.no/takk-for-din-interesse/");
             contactFormStatus.innerHTML = "Thanks for your submission, you will hear back from us shortly!";
             contactForm.reset()
         } else {
