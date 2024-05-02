@@ -19,7 +19,7 @@
                     <div class="column is-6 hero-left">
                         <h1 class="title is-1">Vi finner <span class="highlight-block"><span class="highlight"></span></span> før <span class="highlight">skurkene</span> gjør det</h1>
                         <h2 class="subtitle is-3">Kovert tenker som hackerne og er spesialister på sikkerhetstesting.</h2>
-                        <a href="kontakt/" class="button is-medium">SNAKK MED EN EKSPERT</a>
+                        <a href="kontakt/" class="button is-medium transform-uppercase">Snakk med en ekspert</a>
                     </div>
                     <figure class="column hero-right">
                         {{ partial "picture.html" (dict "src" "martin-frontpage.png" "alt" "Martin Ingesen" "class" "has-ratio") }}
@@ -29,7 +29,7 @@
                     <div class="column">
                       <h1 class="title is-size-2-mobile is-size-2-tablet">Vi finner <span class="highlight-block"><span class="highlight-inverse">sårbarhetene</span></span> før <span class="highlight-inverse">skurkene</span> gjør det</h1>
                       <h2 class="subtitle is-size-5-mobile is-size-3-tablet">Kovert tenker som hackerne og er spesialister på sikkerhetstesting.</h2>
-                      <a href="kontakt/" class="button is-responsive is-multiline">SNAKK MED EN EKSPERT</a>
+                      <a href="kontakt/" class="button is-responsive is-multiline" style="text-transform: uppercase;">Snakk med en ekspert</a>
                     </div>
                     <figure class="column hero-right is-small-mobile">
                         {{ partial "picture.html" (dict "src" "martin-frontpage.png" "alt" "Martin Ingesen" "class" "has-ratio") }}
@@ -40,7 +40,7 @@
         <div class="hero-foot">
             <nav class="tabs is-boxed is-fullwidth">
                 <div class="container">
-                    <p  class="has-text-centered">MED TILLIT FRA</p>
+                    <p  class="has-text-centered transform-uppercase">Med tillit fra</p>
                     <section id="image-carousel" class="splide" aria-label="Med tillit fra">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -69,371 +69,110 @@
             </nav>
         </div>
     </section>
-</div>
-<div class="transition-green-to-white"></div>
-<div class="container">
-    <section class="section feature-light">
-        <h1 class="section-title has-text-centered">Vi tilbyr <span class="highlight">spesialiserte tjenester</span> for å <br>sikre din <span class="highlight">bedrift</span></h1>
-        <div class="columns">
-            <div class="column is-4">
-                <div class="card r-1">
-                    <div class="card-image">
-                        <figure class="image">
-                            <a href="tjenester/penetrasjonstesting/">
-                                {{ partial "picture.html" (dict "src" "network.png" "alt" "Nettverk og Penetrasjonstesting") }}
-                            </a>
-                        </figure>
+    <div class="transition-green-to-white"></div>
+
+    {{ partial "services-overview.no.html" }}
+
+    <div class="transition-white-to-green"></div>
+    <section class="section feature-dark">
+        <div class="container">
+            <h1 class="section-title has-text-centered">Hva <span class="highlight-inverse">skiller oss</span> fra resten?</h1>
+            <p class="subtitle has-text-centered">
+                Kovert ble grunnlagt med visjonen om å styrke den offensive sikkerhetsindustrien ved å samle det mest teknologisk dyktige teamet av IT-sikkerhetsspesialister. Vi er stolte av tjenestene vi kan levere til våre kunder. Kovert tar sikte på å sette tonen for IT-sikkerhetstestindustrien ved å investere i utmerkede ansatte og å sørge for fornøyde kunder i alle engasjementer.
+            </p>
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="img-container">
+                        {{ partial "picture.html" (dict "src" "experts.png" "alt" "Teknisk ekspertise") }}
                     </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h1 class="is-size-4-mobile">Nettverks- og Penetrasjons-<br>testing</h1>
-                            Målrettede søk og tester av svakheter av dine applikasjoner, nettverk og infrastruktur.
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tjenester/penetrasjonstesting/" class="card-footer-item">Les mer</a>
-                    </footer>
+                    <h1 class="title">Teknisk<br>Ekspertise</h1>
+                    <h2>Kovert-teamet består av eksperter med mange års erfaring med offensiv sikkerhet fra både offentlig og privat sektor.</h2>
                 </div>
-            </div>
-            <div class="column is-4">
-                <div class="card r-1">
-                    <div class="card-image">
-                        <figure class="image">
-                            <a href="tjenester/sikkerhet-i-skyen/">
-                                {{ partial "picture.html" (dict "src" "cloud.png" "alt" "Sikkerhet i skyen") }}
-                            </a>
-                        </figure>
+                <div class="column is-4">
+                    <div class="img-container">
+                        {{ partial "picture.html" (dict "src" "research.png" "alt" "Drevet av avansert research") }}
                     </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h1 class="is-size-4-mobile">Sikkerhet i skyen</h1>
-                            Skytjenester blir en stadig større del av moderne IT-løsniger. Vi hjelper deg med å sikre dine skytjenester.
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tjenester/sikkerhet-i-skyen/" class="card-footer-item">Les mer</a>
-                    </footer>
+                    <h1 class="title">Drevet av <br>avansert research</h1>
+                    <h2>Kovert har som mål å sette standarden for offensiv sikkerhet. Vi bruker 25% av tiden vår på forskning og utvikling for å forbedre våre kunnskaper og TTP'er.</h2>
                 </div>
-            </div>
-            <div class="column is-4">
-                <div class="card r-1">
-                    <div class="card-image">
-                        <figure class="image">
-                            <a href="tjenester/applikasjons-testing/">
-                                {{ partial "picture.html" (dict "src" "vulnerability.png" "alt" "Applikasjons-testing") }}
-                            </a>
-                        </figure>
+                <div class="column is-4">
+                    <div class="img-container">
+                        {{ partial "picture.html" (dict "src" "community.png" "alt" "Gir tilbake til fellesskapet") }}
                     </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h1 class="is-size-4-mobile">Applikasjons-<br>testing</h1>
-                            Vi hjelper deg med å sikre din programvare og dine applikasjoner, på web, mobil og desktop.
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tjenester/applikasjons-testing/" class="card-footer-item">Les mer</a>
-                    </footer>
-                </div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column is-4">
-                <div class="card r-1">
-                    <div class="card-image">
-                        <figure class="image">
-                            <a href="tjenester/kurs-og-opplaering/">
-                                {{ partial "picture.html" (dict "src" "presentation.png" "alt" "Kurs og opplæring") }}
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h1 class="is-size-4-mobile">Kurs og opplæring</h1>
-                            Vårt team av spesialister tilbyr kurs og opplæring i digital sikkerhet, og deler av våre kunnskaper og erfaringer for å gjøre dere sikrere. Vi tilbyr kurs i ulike nivåer og til ulike situasjoner som passer dine behov.
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tjenester/kurs-og-opplaering/" class="card-footer-item">Les mer</a>
-                    </footer>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card r-1">
-                    <div class="card-image">
-                        <figure class="image">
-                            <a href="tjenester/iot-produkt-sikkerhet/">
-                                {{ partial "picture.html" (dict "src" "iot.png" "alt" "IoT Produktsikkerhet") }}
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h1 class="is-size-4-mobile">IoT- og produktsikkerhet</h1>
-                            Med kunnskap og erfaring fra sikkerhetstesting av IoT-produkter og -løsninger, kan vi hjelpe deg med å sikre både program- og maskinvare.
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tjenester/iot-produkt-sikkerhet/" class="card-footer-item">Les mer</a>
-                    </footer>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card r-1">
-                    <div class="card-image">
-                        <figure class="image">
-                            <a href="tjenester/adversary-simulation/">
-                                {{ partial "picture.html" (dict "src" "hacker.png" "alt" "Red-team og beredskap") }}
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h1 class="is-size-4-mobile">Red-team og beredskap</h1>
-                            Vi hjelper deg med å teste dine sikkerhetsløsninger og beredskap mot målrettede angrep, gjennom simulering av reelle angrep.
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tjenester/adversary-simulation/" class="card-footer-item">Les mer</a>
-                    </footer>
+                    <h1 class="title">Gir tilbake<br>til fellesskapet</h1>
+                    <h2>Vi jobber for å støtte fellesskapet, og deler vår ekspertise gjennom presentasjoner, bloggposter, events og kurs for å gi tilbake til hele industrien, ikke bare våre kunder.</h2>
                 </div>
             </div>
         </div>
     </section>
-</div>
-<div class="transition-white-to-green"></div>
-<section class="section feature-dark">
-    <div class="container">
-        <!--<hr class="short-hr">-->
-        <h1 class="section-title has-text-centered">Hva <span class="highlight-inverse">skiller oss</span> fra resten?</h1>
-        <p class="subtitle has-text-centered">
-            Kovert ble grunnlagt med visjonen om å styrke den offensive sikkerhetsindustrien ved å samle det mest teknologisk dyktige teamet av IT-sikkerhetsspesialister. Vi er stolte av tjenestene vi kan levere til våre kunder. Kovert tar sikte på å sette tonen for IT-sikkerhetstestindustrien ved å investere i utmerkede ansatte og å sørge for fornøyde kunder i alle engasjementer.
-        </p>
-        <div class="columns">
-            <div class="column is-4">
-                <div class="img-container">
-                    {{ partial "picture.html" (dict "src" "experts.png" "alt" "Teknisk ekspertise") }}
-                </div>
-                <h1 class="title">Teknisk<br>Ekspertise</h1>
-                <h2>Kovert-teamet består av eksperter med mange års erfaring med offensiv sikkerhet fra både offentlig og privat sektor.</h2>
-            </div>
-            <div class="column is-4">
-                <div class="img-container">
-                    {{ partial "picture.html" (dict "src" "research.png" "alt" "Drevet av avansert research") }}
-                </div>
-                <h1 class="title">Drevet av <br>avansert research</h1>
-                <h2>Kovert har som mål å sette standarden for offensiv sikkerhet. Vi bruker 25% av tiden vår på forskning og utvikling for å forbedre våre kunnskaper og TTP'er.</h2>
-            </div>
-            <div class="column is-4">
-                <div class="img-container">
-                    {{ partial "picture.html" (dict "src" "community.png" "alt" "Gir tilbake til fellesskapet") }}
-                </div>
-                <h1 class="title">Gir tilbake<br>til fellesskapet</h1>
-                <h2>Vi jobber for å støtte fellesskapet, og deler vår ekspertise gjennom presentasjoner, bloggposter, events og kurs for å gi tilbake til hele industrien, ikke bare våre kunder.</h2>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="transition-green-to-white"></div>
-<section class="section contact">
-    <div class="container">
-        <h1 class="section-title has-text-centered">Snakk med en <span class="highlight">ekspert</span> for å høre <br> hvordan <span class="highlight">vi kan hjelpe</span></h1>
-        <div class="columns">
-            <div class="column is-half is-offset-one-quarter">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            {{/*  Direct copy of {{< contactform >}}  */}}
-                            <form id="contact-form" action="https://formspree.io/f/xqknvjdw" method="POST">
-                                <div class="field">
-                                    <h3 id="contact-form-status" class="subtitle is-3"></h3>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Your Name</label>
-                                    <div class="control">
-                                        <input class="input" type="text" name="name" placeholder="Contact Name">
+    <div class="transition-green-to-white"></div>
+    <section class="section contact">
+        <div class="container">
+            <h1 class="section-title has-text-centered">Snakk med en <span class="highlight">ekspert</span> for å høre <br> hvordan <span class="highlight">vi kan hjelpe</span></h1>
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                {{/*  Direct copy of {{< contactform >}}  */}}
+                                <form id="contact-form" action="https://formspree.io/f/xqknvjdw" method="POST">
+                                    <div class="field">
+                                        <h3 id="contact-form-status" class="subtitle is-3"></h3>
                                     </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Email</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="email" name="email" placeholder="Email address">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
+                                    <div class="field">
+                                        <label for="input-name" class="label">Your Name</label>
+                                        <div class="control">
+                                            <input class="input" id="input-name" type="text" name="name" placeholder="Contact Name" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Phone</label>
-                                    <div class="control has-icons-left">
-                                        <input class="input" type="tel" name="tel" placeholder="Phone number">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-phone"></i>
-                                        </span>
+                                    <div class="field">
+                                        <label for="input-email" class="label">Email</label>
+                                        <div class="control has-icons-left">
+                                            <input class="input" id="input-email" type="email" name="email" placeholder="Email address" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Message</label>
-                                    <div class="control">
-                                        <textarea class="textarea" placeholder="Message" name="message"></textarea>
+                                    <div class="field">
+                                        <label for="input-tel" class="label">Phone</label>
+                                        <div class="control has-icons-left">
+                                            <input class="input" id="input-tel" type="tel" name="tel" placeholder="Phone number" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="field">
-                                    <div class="control">
-                                        <button type="submit" class="button is-success is-fullwidth">Send</button>
+                                    <div class="field">
+                                        <label for="input-message" class="label">Message</label>
+                                        <div class="control">
+                                            <textarea id="input-message" class="textarea" placeholder="Message" name="message"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                            <script src="/js/formspree.js"></script>
+                                    <div class="field">
+                                        <div class="control">
+                                            <button type="submit" class="button is-success is-fullwidth">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <script src="/js/formspree.js"></script>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<div class="transition-white-to-green"></div>
-{{ partial "footer.no.html" . }}
-<script src="/js/particles.min.js"></script>
-<script>
-    particlesJS("particles-js", {
-        "particles": {
-            "number": {
-                "value": 50,
-                "density": {
-                    "enable": true,
-                    "value_area": 1000
-                }
-            },
-            "color": {
-                "value": ["#0ca438"]
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 5,
-                    "color": "#0ca438"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                },
-                "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
-                }
-            },
-            "opacity": {
-                "value": 0.6,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 2,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 120,
-                "color": "#0ca438",
-                "opacity": 0.2,
-                "width": 1.6
-            },
-            "move": {
-                "enable": true,
-                "speed": 2,
-                "direction": "top",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "grab"
-                },
-                "onclick": {
-                    "enable": false
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 140,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
-    });
-</script>
-<script src="/js/typed.js"></script>
-<script>
-    var options = {
-        strings: ['sikkerhetshullene', 'sårbarhetene', 'svakhetene'],
-        typeSpeed: 75,
-        backSpeed: 25,
-        loop: true,
-        showCursor: false,
-        smartBackspace: true,
-    };
-    var typed = new Typed('.highlight', options);
-</script>
-<script src="/js/splide.min.js"></script>
-<script src="/js/splide-extension-auto-scroll.min.js"></script>
-<link href="/css/splide.min.css" rel="stylesheet">
-<script>
-    new Splide( '#image-carousel', {
-        type: 'loop',
-        perPage: 3,
-        speed: 40,
-        arrows: false,
-        pagination: false,
-        autoScroll: {
-            speed: 1,
-            pauseOnHover: false,
-            pauseOnFocus: false
-        },
-        
-    } ).mount( window.splide.Extensions );
-</script>
+    </section>
+    <div class="transition-white-to-green"></div>
+
+    {{ partial "footer.no.html" . }}
+
+    <script src="/js/particles.min.js"></script>
+    <script src="/js/typed.js"></script>
+    <script src="/js/splide.min.js"></script>
+    <script src="/js/splide-extension-auto-scroll.min.js"></script>
+    <link href="/css/splide.min.css" rel="stylesheet">
+
+    <script src="/js/home.no.js"></script>
 </body>
 </html>

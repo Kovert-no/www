@@ -20,53 +20,17 @@
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link is-arrowless" href="#">
+          <a class="navbar-link is-arrowless" href="/services/">
             SERVICES
           </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="/en/services/penetration-testing/">
-              PENETRATION TESTING
-            </a>
-            <!-- <a class="navbar-item" href="/en/services/attack-surface-management/"> -->
-            <!--   ATTACK SURFACE MANAGEMENT -->
-            <!-- </a> -->
-            <a class="navbar-item" href="/en/services/cloud-security/">
-              CLOUD SECURITY
-            </a>
-            <a class="navbar-item" href="/en/services/application-testing/">
-              APPLICATION TESTING
-            </a>
-            <a class="navbar-item" href="/en/services/iot-product-security/">
-              IOT AND PRODUCT SECURITY
-            </a>
-            <a class="navbar-item" href="/en/services/quickcheck/">
-              QUICKCHECK
-            </a>
-            <a class="navbar-item" href="/en/services/trainings/">
-              TRAININGS
-            </a>
-
-          </div>
         </div>
 
         <div class="navbar-item is-nav-link">
-          <a class="" href="/en/blog/">BLOG</a>
+          <a class="transform-uppercase" href="/en/about-us/">About us</a>
         </div>
 
         <div class="navbar-item is-nav-link">
-          <a class="" href="/en/about-us/">ABOUT US</a>
-        </div>
-
-        <div class="navbar-item is-nav-link">
-          <a class="" href="/en/careers/">CAREERS</a>
-        </div>
-
-        <div class="navbar-item is-nav-link">
-          <a class="button navbar-button is-info is-outlined" href="https://merch.kovert.no/">MERCH</a>
-        </div>
-
-        <div class="navbar-item is-nav-link">
-          <a class="button navbar-button" href="/en/contact/">CONTACT US</a>
+          <a class="button navbar-button transform-uppercase" href="/en/contact/">Contact us</a>
         </div>
 
         <div class="navbar-item is-nav-link">
@@ -76,26 +40,3 @@
     </div>
   </div>
 </nav>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-
-// Get all "navbar-burger" elements
-const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-// Add a click event on each of them
-$navbarBurgers.forEach( el => {
-  el.addEventListener('click', () => {
-
-    // Get the target from the "data-target" attribute
-    const target = el.dataset.target;
-    const $target = document.getElementById(target);
-
-    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-    el.classList.toggle('is-active');
-    $target.classList.toggle('is-active');
-
-  });
-});
-
-});
-</script>

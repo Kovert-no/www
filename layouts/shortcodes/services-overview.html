@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="{{ (resources.Get "/css/index.css" | resources.Minify).Permalink }}">
+
+{{ $firstArg := .Get 0 }}
+{{ if eq $firstArg "no" }}
+    {{ partial "services-overview.no.html" }}
+{{ else }}
+    {{ partial "services-overview.en.html" }}
+{{ end }}

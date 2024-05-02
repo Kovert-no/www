@@ -9,7 +9,7 @@
 
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/images/logos/kovert-negative.png">
+        <img src="/images/logos/kovert-negative.png" alt="Kovert logo">
       </a>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -22,55 +22,17 @@
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link is-arrowless" href="#">
-            TJENESTER
+          <a class="transform-uppercase navbar-link is-arrowless" href="/tjenester/">
+            Tjenester
           </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="/tjenester/penetrasjonstesting/">
-              PENETRASJONSTESTING
-            </a>
-            <!-- <a class="navbar-item" href="/tjenester/attack-surface-management/"> -->
-            <!--   ATTACK SURFACE MANAGEMENT -->
-            <!-- </a> -->
-            <a class="navbar-item" href="/tjenester/sikkerhet-i-skyen/">
-              SIKKERHET I SKYEN
-            </a>
-            <a class="navbar-item" href="/tjenester/applikasjons-testing/">
-              APPLIKASJONSTESTING
-            </a>
-            <a class="navbar-item" href="/tjenester/iot-produkt-sikkerhet/">
-              IOT OG PRODUKTSIKKERHET
-            </a>
-            <a class="navbar-item" href="/tjenester/quickcheck/">
-              QUICKCHECK
-            </a>
-            <a class="navbar-item" href="/tjenester/kurs-og-opplaering">
-              KURS OG TRENING
-            </a>
-            <a class="navbar-item" href="/tjenester/adversary-simulation/">
-              ADVERSARY SIMULATION
-            </a>
-          </div>
-        </div>
-        
-        <div class="navbar-item is-nav-link">
-          <a class="" href="/blogg/">BLOGG</a>
         </div>
 
         <div class="navbar-item is-nav-link">
-          <a class="" href="/om-oss/">OM OSS</a>
+          <a class="transform-uppercase" href="/om-oss/">Om oss</a>
         </div>
 
         <div class="navbar-item is-nav-link">
-          <a class="" href="/karriere/">KARRIERE</a>
-        </div>
-
-        <div class="navbar-item is-nav-link">
-          <a class="button navbar-button is-info is-outlined" href="https://merch.kovert.no/">MERCH</a>
-        </div>
-
-        <div class="navbar-item is-nav-link">
-          <a class="button navbar-button" href="/kontakt/">KONTAKT OSS</a>
+          <a class="button navbar-button transform-uppercase" href="/kontakt/">Kontakt oss</a>
         </div>
 
         <div class="navbar-item is-nav-link">
@@ -80,26 +42,3 @@
     </div>
   </div>
 </nav>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-
-// Get all "navbar-burger" elements
-const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-// Add a click event on each of them
-$navbarBurgers.forEach( el => {
-  el.addEventListener('click', () => {
-
-    // Get the target from the "data-target" attribute
-    const target = el.dataset.target;
-    const $target = document.getElementById(target);
-
-    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-    el.classList.toggle('is-active');
-    $target.classList.toggle('is-active');
-
-  });
-});
-
-});
-</script>

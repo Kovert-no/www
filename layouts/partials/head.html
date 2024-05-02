@@ -4,12 +4,20 @@
 <link rel="stylesheet" href="/css/bulma.min.css">
 <link rel="stylesheet" href="/css/bulma-divider.min.css">
 <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/kovert.css">
 <link rel="stylesheet" href="{{ (resources.Get "/css/style.css" | resources.Minify).Permalink }}">
 <link rel=”shortcut icon” href="/favicon.ico">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 <!-- General -->
 <meta name="description" content="We find your weaknesses before the hackers do. Kovert thinks like the hackers, and specialize in cybersecurity testing.">
+<meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https://kovert.no https://kovertcdn.blob.core.windows.net;
+    style-src 'self' 'unsafe-inline' https://kovert.no;
+    img-src 'self' https://kovert.no data:;
+    script-src 'self' https://kovert.no https://cdn-cookieyes.com https://www.googletagmanager.com;
+    frame-src 'self' https://www.googletagmanager.com https://www.linkedin.com;
+">
 
 <!-- Image -->
 <meta property="og:image" content="https://kovert.no/images/logos/kovert-widescreen.png">
