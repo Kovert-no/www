@@ -13,7 +13,7 @@
         {{ end }}
     </title>
 </head>
-<body>    
+<body>
     {{ block "tagmgrbody" . }}
     {{ partial "tagmgrbody.html" . }}
     {{ end }}
@@ -26,5 +26,22 @@
     {{ block "footer" . }}
     {{ partial "footer" . }}
     {{ end }}
+
+    <!-- Meta Pixel Code -->
+    <script type="text/javascript" src="/js/pixels/meta.js"></script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=362827803374406&ev=PageView
+&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- LinkedIn Pixel Code -->
+    <script type="text/javascript" src="/js/pixels/linkedin.js"></script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7489897&fmt=gif" />
+    </noscript>
+    <!-- End LinkedIn Pixel Code -->
+
 </body>
 </html>
