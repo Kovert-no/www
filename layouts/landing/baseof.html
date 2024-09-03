@@ -4,14 +4,18 @@
     {{ block "tagmgrhead" . }}
     {{ partial "tagmgrhead" . }}
     {{ end }}
-    {{ block "head" . }}
-    {{ partial "head" . }}
+    {{ block "head.insecure" . }}
+    {{ partial "head.insecure" . }}
     {{ end }}
     <title>
         {{ block "title" . }}
         {{ .Site.Title }}
         {{ end }}
     </title>
+
+    <!-- VWO SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script src="/js/pixels/vwo.js"></script>
 </head>
 <body>
     {{ block "tagmgrbody" . }}
